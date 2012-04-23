@@ -1,21 +1,16 @@
-Gem::Specification.new do |s|
-  s.name = "newrelic_riak"
-  s.version = "0.1.0"
-
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Alin Popa"]
-  s.date = "2012-04-23"
-  s.description = "NewRelic instrumentation for Riak."
-  s.email = ["alin.popa@gmail.com"]
-  s.extra_rdoc_files = ["README.txt"]
-  s.files = ["README.txt", "lib/newrelic_riak.rb", "lib/newrelic_riak/riak_client.rb", "lib/newrelic_riak/ripple.rb", "newrelic_riak.gemspec"]
-  s.homepage = "https://github.com/alinpopa/newrelic-riak"
-  s.rdoc_options = ["--main", "README.txt"]
-  s.require_paths = ["lib"]
-  #s.rubyforge_project = "newrelic_riak"
-  s.rubygems_version = "1.8.17"
-  s.summary = "NewRelic instrumentation for Riak."
-  #s.test_files = ["test/test_newrelic_riak_client.rb", "test/test_newrelic_ripple.rb"]
-  s.add_runtime_dependency(%q<newrelic_rpm>, ["~> 3.0"])
+Gem::Specification.new do |gem|
+  gem.name = "newrelic_riak"
+  gem.version = "0.1.0"
+  gem.authors = ["Alin Popa"]
+  gem.date = "2012-04-23"
+  gem.description = "NewRelic instrumentation for Riak."
+  gem.email = ["alin.popa@gmail.com"]
+  gem.homepage = "https://github.com/alinpopa/newrelic-riak"
+  gem.summary = "NewRelic instrumentation for Riak."
+  
+  gem.add_runtime_dependency(%q<newrelic_rpm>, ["~> 3.0"])
+  
+  gem.files = ["README.txt", "lib/newrelic_riak.rb", "lib/newrelic_riak/riak_client.rb", "lib/newrelic_riak/ripple.rb", "newrelic_riak.gemspec"]
+  gem.require_paths = ['lib']
 end
 
