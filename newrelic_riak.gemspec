@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = "newrelic-riak"
+  s.name = "newrelic_riak"
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -8,11 +8,11 @@ Gem::Specification.new do |s|
   s.description = "NewRelic instrumentation for Riak."
   s.email = ["alin.popa@gmail.com"]
   s.extra_rdoc_files = ["README.txt"]
-  s.files = ["README.txt", "lib/newrelic-riak.rb", "lib/newrelic_riak/riak_client.rb", "lib/newrelic_riak/ripple.rb", "newrelic-riak.gemspec"]
+  s.files = ["README.txt", "lib/newrelic_riak.rb", "lib/newrelic_riak/riak_client.rb", "lib/newrelic_riak/ripple.rb", "newrelic_riak.gemspec"]
   s.homepage = "https://github.com/alinpopa/newrelic-riak"
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = "newrelic-riak"
+  #s.rubyforge_project = "newrelic_riak"
   s.rubygems_version = "1.8.17"
   s.summary = "NewRelic instrumentation for Riak."
   #s.test_files = ["test/test_newrelic_riak_client.rb", "test/test_newrelic_ripple.rb"]
