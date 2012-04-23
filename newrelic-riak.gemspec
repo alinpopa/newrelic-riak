@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.description = "NewRelic instrumentation for Riak."
   s.email = ["alin.popa@gmail.com"]
   s.extra_rdoc_files = ["README.txt"]
-  s.files = ["README.txt", "Rakefile", "lib/newrelic-riak.rb", "lib/newrelic_riak/riak_client.rb", "lib/newrelic_riak/ripple.rb", "newrelic-riak.gemspec", "test/test_newrelic_riak.rb"]
+  s.files = ["README.txt", "Rakefile", "lib/newrelic-riak.rb", "lib/newrelic_riak/riak_client.rb", "lib/newrelic_riak/ripple.rb", "newrelic-riak.gemspec"]
   s.homepage = "https://github.com/alinpopa/newrelic-riak"
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
