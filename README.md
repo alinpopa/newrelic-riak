@@ -1,5 +1,5 @@
 ### Description:
-NewRelic instrumentation for Riak and Ripple.
+NewRelic instrumentation for [riak-ruby-client](https://github.com/basho/riak-ruby-client) and [ripple](https://github.com/seancribbs/ripple).
 
 ### Installation:
 Add the gem file reference to the Gemfile
