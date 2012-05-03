@@ -1,2 +1,0 @@
-NewRelic instrumentation for Riak
-
