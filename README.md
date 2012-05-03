@@ -4,7 +4,7 @@ NewRelic instrumentation for [riak-ruby-client](https://github.com/basho/riak-ru
 
 ## Dependencies
 `newrelic-riak` requires:
-- Ruby 1.9.2 or later
+- Ruby 1.9.3 or later (1.9.3 was the only version that was tested against)
 - [newrelic](https://github.com/newrelic/rpm)
 - [riak-ruby-client](https://github.com/basho/riak-ruby-client)
 - [ripple](https://github.com/seancribbs/ripple)
