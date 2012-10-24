@@ -4,7 +4,7 @@ DependencyDetection.defer do
   @name = :ripple_contrib
 
   depends_on do
-    defined?(::Ripple::Encryption) and not NewRelic::Control.instance['disable_ripple_contrib']
+    defined?(::Ripple::Contrib) and not NewRelic::Control.instance['disable_ripple_contrib']
   end
 
   executes do
