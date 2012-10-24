@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   
   gem.add_runtime_dependency(%q<newrelic_rpm>, ["~> 3.0"])
   
-  gem.files = ["README.txt", "lib/newrelic_riak.rb", "lib/newrelic_riak/riak_client.rb", "lib/newrelic_riak/ripple.rb", "newrelic_riak.gemspec"]
+  gem.files = ["README.txt", "lib/newrelic_riak.rb", "lib/newrelic_riak/riak_client.rb", "lib/newrelic_riak/ripple.rb", "lib/newrelic_riak/ripple_encryption.rb", "newrelic_riak.gemspec"]
   gem.require_paths = ['lib']
 end
 
