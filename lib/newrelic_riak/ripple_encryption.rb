@@ -12,14 +12,19 @@ DependencyDetection.defer do
   end
 
   executes do
-    ::Ripple::Encryption::Serializer.class_eval do
-      add_method_tracer :dump, 'Database/Riak/RippleEncryption/dump'
-      add_method_tracer :load, 'Database/Riak/RippleEncryption/load'
+    backend_tracers = proc do
     end
 
+    ::Ripple::Encryption::Serializer.class_eval &backend_tracers
+    ::Ripple::Encryption::Serializer.class_eval do
+      add_method_tracer :dump, 'Database/RippleEncryption/dump'
+      add_method_tracer :load, 'Database/RippleEncryption/load'
+    end
+
+    ::Ripple::Encryption::Encryptor.class_eval &backend_tracers
     ::Ripple::Encryption::Encryptor.class_eval do
-      add_method_tracer :encrypt, 'Database/Riak/RippleEncryption/encrypt'
-      add_method_tracer :decrypt, 'Database/Riak/RippleEncryption/decrypt'
+      add_method_tracer :encrypt, 'Database/RippleEncryption/encrypt'
+      add_method_tracer :decrypt, 'Database/RippleEncryption/decrypt'
     end
   end
 end
